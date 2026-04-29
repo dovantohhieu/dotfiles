@@ -122,3 +122,25 @@ export PATH="$CUDA_HOME/bin:$PATH"
 export LD_LIBRARY_PATH="$CUDA_HOME/lib64:$LD_LIBRARY_PATH"
 
 . "$HOME/.local/bin/env"
+
+# --- CUDA ---
+export CUDA_HOME=/usr/local/cuda-12.4
+export PATH="$CUDA_HOME/bin:$PATH"
+export LD_LIBRARY_PATH="$CUDA_HOME/lib64:$LD_LIBRARY_PATH"
+
+# --- uv ---
+export PATH="$HOME/.local/bin:$PATH"
+
+# --- Aliases ---
+alias ll='ls -alFh --color=auto'
+alias gs='git status'
+alias gl='git log --oneline --graph --decorate -20'
+alias gc='git commit'
+alias gp='git push'
+alias ga='git add'
+alias py='python3'
+alias nv='nvtop'
+alias mon='tmux new-session -d -s mon "nvtop" \; split-window -v "htop" \; split-window -h "s-tui" \; attach'
+
+# --- Misc ---
+export EDITOR=nvim
